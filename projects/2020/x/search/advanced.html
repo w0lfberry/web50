@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="d-flex flex-row-reverse header">
+            <div class="p-2 bd-highlight"><a href="index.html">Search</a></div>
+        </div>
+
+        <style>
+            .text {
+                width: 250px;
+                position: fixed;
+                left: 0;
+
+            }
+            .row {
+              margin: 10px;
+              padding-left:250px;
+              height:30px;
+            }
+            input {
+              width:200px;
+            }
+        </style>
+
+        <div>
+            <form action="https://www.google.com/search">
+                <div style="font-size:14px;">
+                    <div class="row">
+                        <div class="col text" style="font-size:18px">Find pages with...</div>
+                    </div>
+                    <div class="row">
+                        <div class="col text">all these words:</div>
+                        <div class="col"><input type="text" name="as_q"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col text">this exact word or phrase:</div>
+                        <div class="col"><input type="text" name="as_epq"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col text">any of these words:</div>
+                        <div class="col"><input type="text" name="as_oq"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col text">none of these words:</div>
+                        <div class="col"><input type="text" name="as_eq"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col text"></div>
+                        <div class="col"><input type="submit" value="Advanced Search" style="background:#4d90fe; color:#FFFFFF; font-weight:bold; padding: 0 12px; font-size:11px; border-radius: 2px; height:30px"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
