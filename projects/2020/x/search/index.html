@@ -6,17 +6,19 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="d-flex flex-row-reverse header">
+        <div class="d-flex flex-row-reverse header" style="margin-bottom:3em;">
             <div class="p-2 bd-highlight"><a href="advanced.html"Advanced>Advanced</a></div>
             <div class="p-2 bd-highlight"><a href="image.html">Images</a></div>
         </div>
-
-        <div class="mx-auto" style="width: 400px;">
+        <div>
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"  class="mx-auto d-block" style="max-width:250px; margin:1em">
+        </div>
+        <div class="mx-auto" style="width:500px">
             <form action="https://www.google.com/search">
-                <input type="text" name="q" class="form-control w-100" style="border-radius: 20px">
-                <div style="display:flex; flex-direction:row">
-                    <input type="submit" value="Google Search" class="w-50" style="margin:10px">
-                    <input type="Submit" value="I'm feeling lucky" class="w-50" style="margin:10px">
+                <input type="text" name="q" class="form-control w-100" style="border-radius: 20px; margin:1em">
+                <div class="row justify-content-center">
+                    <input type="submit" name="btnK" value="Google Search" class="col-4">
+                    <input type="submit" name="btnI" value="I'm feeling lucky" class="col-4">
                 </div>
             </form>
         </div>
